@@ -8,5 +8,5 @@ root.title("Hello World")
 label = tk.Label(root, text="Hello World")
 label.pack()
 
-# アプリケーションウィンドウを表示する
+# アプリケーションウィンドウを表示する1
 root.mainloop()
