@@ -1,5 +1,6 @@
 import tkinter as tk
 import time
+#test
 
 # ポモドーロタイマーの時間（単位：秒）
 POMODORO_TIME = 25 * 60
