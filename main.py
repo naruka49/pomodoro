@@ -1,6 +1,5 @@
 import tkinter as tk
 import time
-#test
 
 # ポモドーロタイマーの時間（単位：秒）
 POMODORO_TIME = 25 * 60
@@ -75,6 +74,7 @@ def complete_break():
     short_break_button.config(state="normal")
     long_break_button.config(state="normal")
     reset_button.config(state="normal")
+    
 # タイマーをリセットする関数
 def reset_timer():
     timer_label.config(text="25:00")
@@ -85,24 +85,24 @@ def reset_timer():
     reset_button.config(state="disabled")
 
 #アプリケーションウィンドウを作成する
-    root = tk.Tk()
-    root.title("Pomodoro Timer")
+root = tk.Tk()
+root.title("Pomodoro Timer")
 
 #タイマーと状態のラベルを作成する
-    timer_label = tk.Label(root, text="25:00", font=("Arial", 48))
-    timer_label.pack()
-    status_label = tk.Label(root, text="", font=("Arial", 18))
-    status_label.pack()
+timer_label = tk.Label(root, text="25:00", font=("Arial", 48))
+timer_label.pack()
+status_label = tk.Label(root, text="", font=("Arial", 18))
+status_label.pack()
 
 #ボタンを作成する
-    start_button = tk.Button(root, text="ポモドーロを開始", command=start_pomodoro)
-    start_button.pack()
-    short_break_button = tk.Button(root, text="短い休憩を開始", command=start_short_break)
-    short_break_button.pack()
-    long_break_button = tk.Button(root, text="長い休憩を開始", command=start_long_break)
-    long_break_button.pack()
-    reset_button = tk.Button(root, text="リセット", command=reset_timer, state="disabled")
-    reset_button.pack()
+start_button = tk.Button(root, text="ポモドーロを開始", command=start_pomodoro)
+start_button.pack()
+short_break_button = tk.Button(root, text="短い休憩を開始", command=start_short_break)
+short_break_button.pack()
+long_break_button = tk.Button(root, text="長い休憩を開始", command=start_long_break)
+long_break_button.pack()
+reset_button = tk.Button(root, text="リセット", command=reset_timer, state="disabled")
+reset_button.pack()
 
 #アプリケーションウィンドウを表示する
-    root.mainloop()
+root.mainloop()
