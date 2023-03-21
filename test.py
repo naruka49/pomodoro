@@ -1,6 +1,6 @@
 import tkinter as tk
 
-# アプリケーションウィンドウを作成する
+# アプリケーションウィンドウを作成する1
 root = tk.Tk()
 root.title("Hello World")
 
