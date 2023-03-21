@@ -27,7 +27,7 @@ def start_pomodoro():
     start_time = time.time()
     end_time = start_time + POMODORO_TIME
     update_timer(timer_label, end_time)
-    status_label.config(text=f"Pomodoro {pomodoro_count} を開始します。")
+    status_label.config(text=f"ぽもどーろ {pomodoro_count} を開始します。")
     start_button.config(state="disabled")
     short_break_button.config(state="disabled")
     long_break_button.config(state="disabled")
@@ -86,7 +86,7 @@ def reset_timer():
 
 #アプリケーションウィンドウを作成する
 root = tk.Tk()
-root.title("Pomodoro Timer")
+root.title("ぽもどーろたいまー")
 
 #タイマーと状態のラベルを作成する
 timer_label = tk.Label(root, text="25:00", font=("Arial", 48))
